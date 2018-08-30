@@ -1,1 +1,4 @@
 .DS_Store
+UARt/*.hex
+UARt/*.o
+UARt/*.elf

@@ -20,10 +20,9 @@ int main()
 		
 	while(1)
 	{	
-		_delay_ms(100);
-		if(( PINB & ( 1<< input )) )
+		
+		if(( PINB & ( 1<< input )) == 0 )
 		{
-
 
 			PORTB |= 1;
 			uart_transmit('a');		

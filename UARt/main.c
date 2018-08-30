@@ -8,14 +8,13 @@
 
 
 
-ISR(USART_RXC_vect)
+ISR(USART_RXC_vect, ISR_BLOCK )
 {
-// while ( ! (UCSRA & ( 1 << RXC )) == 0 ) {};
+ //while ( ! (UCSRA & ( 1 << RXC )) == 0 ) {};
  unsigned char received = UDR;
-UDR = 0;
  if( received == 'a' )
  {
-	PORTB ^= _BV(PB0);
+ 	PORTB ^= _BV(PB0);
  }
 
 
