@@ -2,3 +2,6 @@
 UARt/*.hex
 UARt/*.o
 UARt/*.elf
+UART2/app.elf
+UART2/app.hex
+*.o
